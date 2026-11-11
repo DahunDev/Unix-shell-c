@@ -1,3 +1,4 @@
+
 # Prerequisites
 *.d
 
@@ -12,7 +13,7 @@
 *.map
 *.exp
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
@@ -22,7 +23,7 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# Shared libraries
 *.dll
 *.so
 *.so.*
@@ -41,8 +42,9 @@
 *.su
 *.idb
 *.pdb
+*.dwo
 
-# Kernel Module Compile Results
+# Kernel module build files
 *.mod*
 *.cmd
 .tmp_versions/
@@ -51,5 +53,36 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
-*.dwo
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+
+# IntelliJ IDEA / CLion
+.idea/
+*.iml
+*.ipr
+*.iws
+cmake-build-*/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+
+# Build directories
+build/
+out/
+dist/
+
+# Project executable
+/csh
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
